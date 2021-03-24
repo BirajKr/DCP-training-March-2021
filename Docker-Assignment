@@ -1,0 +1,27 @@
+Docker Assignment
+
+ABC is a software company and you are hired as DevOps Engineer and you have to implement DevOps Lifecycle for a certain number of projects. Below tasks are assigned to you to maintain the containerization for the Project called CAPSTONE.
+
+1.       Create ubuntu Linux containers for WebServer and Database Server. ( Hint :- pull ubuntu images)
+
+2.       Install apache server on WebServer Container and verify it is working fine or not by connecting host machine to Webserver container and check that default web page is getting opened on the browser or not (Hint:-Port forwarding)
+
+3.       Install mysql server on Database server.
+
+4.       There are some requirements that development team has given to you w.r.t. webserver that you need to implement as a new image called UbuntuServer.
+
+4.1   Webserver should be ubuntu OS
+
+4.2   Apache is to be installed and should be in running mode
+
+4.3   All the files should be copied from host machine (/home/ubuntu/myproject folder) to webserver container (/var/www/html)
+
+
+ 
+4.4   Set an environment variable called appstatus = Running. (Hint:Dockerfile)
+
+
+ 
+5.       Push above image file to dockerhub (under your repository).
+
+6.       On MySqlServer , a folder called /mylogfiles is to be created in such a way that event we remove the container that data should not be removed from this folder.(Hint docker volume)
